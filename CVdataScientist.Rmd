@@ -1,0 +1,215 @@
+---
+name: Cécile
+surname: Sommen
+position: "PhD - Data Scientist / Biostatistician"
+#pronouns: she/her
+address: "Mines Paris PSL - ISPED"
+#profilepic: "../portrait_cecile.jpeg"
+phone: 0685845559
+#www: mariecurie.com
+email: "cecile.sommen@proton.fr"
+orcid: 0009-0005-4652-0575
+#twitter: mariecurie
+#github: cecilesommen
+#linkedin: cecilesommen
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "PhD en biostatistique et diplomée par les Mines Paris PSL en Data Science avec plus de 15 ans d’expérience en santé publique.  
+Spécialiste en modélisation statistique, industrialisation des traitements et structuration de pipelines de données.  
+Expérience en pilotage transversal, production d’indicateurs stratégiques et collaborations internationales."
+output:
+  vitae::awesomecv:
+    page_total: true
+# template: awesomecvmodif/awesome-cv.tex
+# output:
+#   pdf_document:
+#     template: awesomecvmodif/resources/awesome-cv.tex
+    latex_engine: xelatex
+    #page_total: true
+  # vitae::moderncv:
+  #   theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+
+source("../data.r")
+
+```
+
+
+# Experience
+
+```{r,results='asis'}
+
+workIPC %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+cat("\\vspace{-1.7em}")
+
+workMines %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear}",.na = ""),
+    where = where
+  )
+
+cat("\\vspace{-1.7em}")
+
+workSPF1 %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+cat("\\vspace{-2.7em}")
+
+workSPF2 %>%
+  detailed_entries(
+    #with = title,
+    what = unit,
+    why = detail,
+    #when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    #where = where
+  )
+
+cat("\\vspace{-2.7em}")
+
+workSPF3 %>%
+  detailed_entries(
+    #with = title,
+    what = unit,
+    why = detail,
+    #when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    #where = where
+  )
+```
+
+
+
+
+
+
+# Test
+
+```{r,results='asis' }
+packages_used <- tibble::tribble(
+  ~ package, ~ date, ~ language, ~ timezone, ~ details,
+  "vitae", Sys.Date(), "R", Sys.timezone(), c("Making my CV with vitae.", "Multiple why entries."),
+  "rmarkdown", Sys.Date()-10, "R", Sys.timezone(), 
+  #paste("- ** Projet A**","  - blabla 1","  - blabla 2","- ** Projet B**","  - blabla 1","  - blabla 2",sep="\n")
+  list(
+  c(
+    "Projet A",
+    I("\\cvsubitems{\\item Analyse multivariée \\item Modélisation logistique}"),
+    "Projet B",
+    I("\\cvsubitems{\\item Coordination internationale}")
+  )
+)
+)
+
+packages_used <- packages_used %>% 
+  mutate(
+    details =  list(
+      c(
+        "Projet A",
+        "\\begin{cvsubitems}
+       \\item Analyse multivariée
+       \\item Modélisation logistique
+     \\end{cvsubitems}",
+     "Projet B",
+     "\\begin{cvsubitems}
+       \\item Coordination internationale
+     \\end{cvsubitems}"
+      )
+    )
+#     details = list(
+#   c(
+#     "Projet A",
+#     knitr::asis_output("
+# \\begin{cvsubitems}
+# \\item Analyse multivariée
+# \\item Modélisation logistique
+# \\end{cvsubitems}
+# "),
+#     "Projet B",
+#     knitr::asis_output("
+# \\begin{cvsubitems}
+# \\item Coordination internationale
+# \\end{cvsubitems}
+# ")
+#   )
+# )
+  )
+
+packages_used %>%
+  detailed_entries(what = package, when = date, with = language, where = timezone, why = details)
+```
+
+
+<!-- ### Experte Data Science – Collaboration internationale   -->
+<!-- Institut Pasteur du Cambodge -->
+
+<!-- - Appui méthodologique et structuration de projets data en santé publique. -->
+<!-- - Conception et optimisation de workflows d’analyse reproductibles. -->
+<!-- - Intégration et transformation de bases de données épidémiologiques. -->
+<!-- - Transfert de compétences et accompagnement des équipes locales. -->
+<!-- - Collaboration dans un environnement international multidisciplinaire. -->
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
+  "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
+  "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Nobel Prizes
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
+  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+) %>%
+  brief_entries(
+    glue::glue("Nobel Prize in {Type}"),
+    Year,
+    Desc
+  )
+```
+
+# Publications
+
+```{r}
+library(dplyr)
+knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
