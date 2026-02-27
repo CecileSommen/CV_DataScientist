@@ -23,13 +23,13 @@ VIH et SIDA - directeur : Pr Alioum - rapporteurs : Pr De Angelis, Pr Costagliol
 workIPC <- tribble(
   ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
   "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Traitements, analyses et valorisation de données provenant de plans de sondage complexes (GLM, GLMM, modèles de survie), dans le respect des délais impartis.",
+",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Traitements, analyses et valorisation de données provenant de plans de sondage complexes (GLM, GLMM, modèles de survie).",
   "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Appui méthodologique aux équipes locales dans la conduite d’études et transfert de compétences en bonnes pratiques de programmation et en méthodologie statistique sous R.",
+",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Appui méthodologique auprès des équipes locales dans un contexte multiculturel et transfert de compétences des bonnes pratiques de programmation et en méthodologie statistique sous R.",
 #   "Institut Pasteur du Cambodge","Data scientist
 # ",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Accompagnement des équipes locale sur leurs études.",
   "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Collaboration dans un environnement multidisciplinaire et multiculturel.",
+",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Collaborations scientifiques internationales avec experts, doctorants et post-doctorants, conduisant à des publications internationales.",
 )
 
 
@@ -37,9 +37,9 @@ workIPC <- tribble(
 workMines <- tribble(
  ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
  "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
-",NA, 2022, NA, "en cours", "Saint Maurice, France", "Coordination de l’organisation, planification des travaux et répartition des tâches de l'équipe (3 personnes de profils variés).",
+",NA, 2022, NA, "en cours", "Saint Maurice, France", "Implication forte dans l’organisation du travail d’équipe (3 personnes) : définition des objectifs, répartition des tâches et suivi du projet.",
  "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
-",NA, 2022, NA, "en cours", "Saint Maurice, France", "Conception et développement d’un pipeline complet de classification multimodale avec structuration des traitements et optimisation des performances.",
+",NA, 2022, NA, "en cours", "Saint Maurice, France", "Conception et développement d’un pipeline complet de classification multimodale avec structuration des traitements et optimisation des performances et des temps de calcul.",
 #  "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
 # ",NA, 2022, NA, "en cours", "Saint Maurice, France", "Structuration des traitements et optimisation des performances.",
  "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
@@ -79,17 +79,17 @@ workSPF2 <- tribble(
 
 workSPF3 <- tribble(
   ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+#   NA,"Autres activités
+# ",NA, 2012, NA, 2023, "Saint Maurice, France","Réflexions sur la mise en place, l’exploitation et l’évaluation des systèmes de surveillance, de campagnes
+# de prévention et d’enquêtes.",
   NA,"Autres activités
-",NA, 2012, NA, 2023, "Saint Maurice, France","Réflexions sur la mise en place, l’exploitation et l’évaluation des systèmes de surveillance, de campagnes
-de prévention et d’enquêtes.",
+",NA, 2012, NA, 2023, "Saint Maurice, France","Valorisation des travaux (30 publications internationales) et représentation de SpF au niveau
+national et international (DGS, ANS, ANRS, ECDC...).",
   NA,"Autres activités
-",NA, 2012, NA, 2023, "Saint Maurice, France","Valorisation des travaux (~ 30 publications internationales) et représentation de SpF au niveau
-national et international (DGS, ANS, ANRS, ECDC...)",
-  NA,"Autres activités
-",NA, 2012, NA, 2023, "Saint Maurice, France","Encadrement de thèse (C. Castel, 2022) et de stages de M2, formations.",
+",NA, 2012, NA, 2023, "Saint Maurice, France","Encadrement de thèse (C. Castel, 2022) et de stages de M2, transfert de compétences aux collègues (formations, guides techniques).",
   NA,"Autres activités
 ",NA, 2012, NA, 2023, "Saint Maurice, France","Participation à l’organisation de séminaires (Rencontres de Santé publique France, Séminaire des
-Modélisateurs, Séminaire Réseau Sentinelles)"
+Modélisateurs, Séminaire Réseau Sentinelles)."
 )
 
 workORS <- tribble(
@@ -112,17 +112,22 @@ workIsped<- tribble(
 
 projetsPerso1 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Application de gestion d'une bibliothèque", "Web API, JSON parsing, R", "2025","https://github.com/CecileSommen/Book_Management_AppShiny",c("Application Shiny permettant de rechercher des livres via ISBN ou titre/auteur, d’éditer leurs métadonnées, puis de les enregistrer dans un fichier Excel structuré.","https://github.com/CecileSommen/Book_Management_AppShiny")
+  "Développement d'une application de gestion d'une bibliothèque", "Web API, JSON parsing, R", "2025","https://github.com/CecileSommen/Book_Management_AppShiny",c("Application Shiny permettant de répertorier rapidement une grande masse de livres en recherchant des livres via ISBN ou titre/auteur, d’éditer leurs métadonnées, puis de les enregistrer dans un fichier Excel structuré.","https://github.com/CecileSommen/Book_Management_AppShiny")
 )
 
 projetsPerso2 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
+<<<<<<< HEAD
   "Application de vente pour l'association La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2024", NA, "Application permettant à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
+=======
+  "Développement d'une application de vente pour l'association La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2024", NA, "Application permettant de faciliter la gestion comptable. Outil permettant également à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
+>>>>>>> 5b5edb8 (modifs CV et lettre de motiv)
 )
 
+# à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)
 projetsPerso3 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Réservation automatique de terrain de tennis", "Webscrapping, Python, Cron", "2021", NA, c("Programme permettant de réserver automatiquement un terrain de tennis dès l'ouverture des réservations.","https://github.com/CecileSommen/Automate_resa_tennis")
+  "Développement d'un programme réservation automatique de terrain de tennis", "Webscrapping, Python, Cron", "2021", NA, c("Programme permettant de réserver automatiquement un terrain de tennis dès l'ouverture des réservations.","https://github.com/CecileSommen/Automate_resa_tennis")
 )
 
 # https://github.com/rainsworth/awesomeCV/blob/master/resume.pdf
