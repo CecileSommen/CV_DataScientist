@@ -18,6 +18,7 @@ date: "`r format(Sys.time(), '%Y')`"
 output:
   vitae::awesomecv:
     #page_total: true
+    
 # template: awesomecvmodif/awesome-cv.tex
 # output:
 #   pdf_document:

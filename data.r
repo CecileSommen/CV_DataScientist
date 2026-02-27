@@ -8,28 +8,6 @@ skills <- tribble(
   "Microsoft Office", "Excel, PowerBI, PowerPoint, Word, OneNote, Outlook"
 )
 
-competences <- tribble(
-  ~what, ~when, ~with, ~where, ~why,
-  
-  "Programmation & Data Engineering", "", "", "",
-  "- R, Python, SQL
-- Apache Spark
-- Airflow (orchestration de pipelines)
-- Git (GitLab, GitHub)",
-  
-  "Analyse statistique & Data Science", "", "", "",
-  "- SAS, Stata
-- Shiny
-- RStudio
-- Quarto / R Markdown",
-  
-  "Outils & Environnements", "", "", "",
-  "- Power BI
-- LaTeX
-- Pack Office
-- Visual Studio Code
-- Windows, Linux, Mac"
-)
 
 edu <- tribble(
   ~degree, ~date, ~inst, ~where,~details,
@@ -139,7 +117,7 @@ projetsPerso1 <- tribble(
 
 projetsPerso2 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Application de vente pour l'association La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2025", NA, "Application permettant à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
+  "Application de vente pour l'association La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2024", NA, "Application permettant à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
 )
 
 projetsPerso3 <- tribble(
