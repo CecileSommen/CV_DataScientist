@@ -1,11 +1,11 @@
 
 skills <- tribble(
   ~area, ~skills,
-  "Langues", "Anglais (B2)",
-  "Data Engineering", "Bash, CSS, HTML, YAML, JSON, Airflow, Git (GitLab, GitHub)",
-  "Statistiques et Data Science", "R, Python, SAS, Stata, LaTeX, RMarkdown, Visual Studio Code, Jupyter ",
-  "Environnements", "Windows, Linux, Mac",
-  "Microsoft Office", "Excel, Outlook, OneNote, PowerBI, PowerPoint, Word"
+  "Langues", "Anglais courant (utilisation professionnelle et personnelle quotidienne depuis août 2023)",
+  "Data Engineering", "Bash, CSS, HTML, YAML, JSON, Airflow, Git (GitLab, GitHub), Spark, Draw.io",
+  "Statistiques et Data Science", "R, Python, SAS, Stata, LaTeX, Quarto, RMarkdown, RShiny, Streamlit",
+  "Environnements et éditeurs", "Windows, Linux, Mac, RStudio, Visual Studio Code, Jupyter",
+  "Microsoft Office", "Excel, PowerBI, PowerPoint, Word, OneNote, Outlook"
 )
 
 competences <- tribble(
@@ -34,7 +34,7 @@ competences <- tribble(
 edu <- tribble(
   ~degree, ~date, ~inst, ~where,~details,
   "Habilitation à l’utilisation des données du SNDS", "2023", NA, "Health Data Hub", NA,
-  "Certification Data-scientist", "2022", "Les Mines Paris-PSL", "Les Mines Paris-PSL - 400 heures de formation", NA,
+  "Diplôme de Data-scientist", "2022", "Les Mines Paris-PSL", "Les Mines Paris-PSL - 400 heures de formation", NA,
   "Thèse en biostatistiques ISPED", "2006 - 2009", "ISPED", "Modèles pour l’estimation de l’incidence de l’infection par le VIH en France à partir des données de surveillance
 VIH et SIDA - directeur : Pr Alioum - rapporteurs : Pr De Angelis, Pr Costagliola", NA,
   "Master 2 Biostatistiques ", "2004 - 2006", NA, "Université des Sciences de Montpellier / Université de Montréal",  NA,
@@ -45,26 +45,28 @@ VIH et SIDA - directeur : Pr Alioum - rapporteurs : Pr De Angelis, Pr Costagliol
 workIPC <- tribble(
   ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
   "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Collaboration dans un environnement international multidisciplinaire.",
+",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Traitements, analyses et valorisation de données provenant de plans de sondage complexes (GLM, GLMM, modèles de survie), dans le respect des délais impartis.",
   "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Transfert de compétences en structuration efficace des programmes et en méthodologie statistique sous R.",
+",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Appui méthodologique aux équipes locales dans la conduite d’études et transfert de compétences en bonnes pratiques de programmation et en méthodologie statistique sous R.",
+#   "Institut Pasteur du Cambodge","Data scientist
+# ",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Accompagnement des équipes locale sur leurs études.",
   "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Accompagnement des équipes locale sur leurs études (utilisation de GitHub).",
-  "Institut Pasteur du Cambodge","Data scientist
-",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Analyses et valorisation de données provenant de plans de sondage complexes (GLM, GLMM, modèles de survie)."
+",NA, 2024, "présent", NA, "Phnom Penh, Cambodge", "Collaboration dans un environnement multidisciplinaire et multiculturel.",
 )
 
 
 
 workMines <- tribble(
  ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
- "Projet Mines Paris - PSL","Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
-",NA, 2022, NA, "en cours", "Saint Maurice, France", "Conception d’un pipeline complet de classification multimodale. ",
- "Projet Mines Paris - PSL","Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
-",NA, 2022, NA, "en cours", "Saint Maurice, France", "Structuration des traitements et optimisation des performances.",
- "Projet Mines Paris - PSL","Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
+ "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
+",NA, 2022, NA, "en cours", "Saint Maurice, France", "Coordination de l’organisation, planification des travaux et répartition des tâches de l'équipe (3 personnes de profils variés).",
+ "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
+",NA, 2022, NA, "en cours", "Saint Maurice, France", "Conception et développement d’un pipeline complet de classification multimodale avec structuration des traitements et optimisation des performances.",
+#  "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
+# ",NA, 2022, NA, "en cours", "Saint Maurice, France", "Structuration des traitements et optimisation des performances.",
+ "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
 ",NA, 2022, NA, "en cours", "Saint Maurice, France"," Gestion de volumes massifs de données dans un environnement cloud (SSPCloud contenant Spark).",
- "Projet Mines Paris - PSL","Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
+ "Projet Mines Paris - PSL","Data-scientist : Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
 ",NA, 2022, NA, "en cours", "Saint Maurice, France", "Intégration de données texte et image. Implémentation de réseaux de neurones profonds avec transfert learning et NLP.",
 #   "Projet Mines Paris - PSL","Classification de produits issus de la plateforme Rakuten à partir de données texte et image (Python)
 # ",NA, 2022, NA, "en cours", "Saint Maurice, France", "Gestion de volumes massifs de données dans un environnement cloud (SSPCloud)."
@@ -74,9 +76,9 @@ workMines <- tribble(
 workSPF1 <- tribble(
   ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
    "Santé publique France – Direction DATA","Activités Data Engineer / Scientist
-",NA, 2012, NA, 2023, "Saint Maurice, France", "Conception et industrialisation de pipelines de production d’indicateurs nationaux. Automatisation complète des traitements via R et GitLab.",
+",NA, 2012, NA, 2023, "Saint Maurice, France", "Conception et industrialisation de pipelines de production d’indicateurs nationaux. Automatisation complète des traitements via R et GitLab. Documentation des traitements, des choix méthodologiques et des pipelines.",
 #   "Santé publique France – Direction DATA","Activités Data Engineer / Scientist
-# ",NA, 2012, NA, 2023, "Saint Maurice, France", "Automatisation complète des traitements via R et GitLab (de l'accès au données à la restitution des indicateurs ou analyses) .",
+# ",NA, 2012, NA, 2023, "Saint Maurice, France", "Documentation structurée des traitements, des choix méthodologiques et des pipelines afin de garantir traçabilité, reproductibilité et maintenabilité.",
   "Santé publique France – Direction DATA","Activités Data Engineer / Scientist
 ",NA, 2012, NA, 2023, "Saint Maurice, France", "Déploiement d’une infrastructure d’orchestration avec Apache Airflow (exécutions parallèles, gestion d’erreurs, alertes, diffusion automatisée).",
   "Santé publique France – Direction DATA","Activités Data Engineer / Scientist
@@ -132,12 +134,12 @@ workIsped<- tribble(
 
 projetsPerso1 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Application de gestion d'une bilbiothèque", "Web API, JSON parsing, R", "2025","https://github.com/CecileSommen/Book_Management_AppShiny",c("Application Shiny permettant de rechercher des livres via ISBN ou titre/auteur, d’éditer leurs métadonnées, puis de les enregistrer dans un fichier Excel structuré.","https://github.com/CecileSommen/Book_Management_AppShiny")
+  "Application de gestion d'une bibliothèque", "Web API, JSON parsing, R", "2025","https://github.com/CecileSommen/Book_Management_AppShiny",c("Application Shiny permettant de rechercher des livres via ISBN ou titre/auteur, d’éditer leurs métadonnées, puis de les enregistrer dans un fichier Excel structuré.","https://github.com/CecileSommen/Book_Management_AppShiny")
 )
 
 projetsPerso2 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Application de vente pour La Petite Librairie (Association)", "Appsheet, GoogleSheet", "2025", NA, "Application permettant à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
+  "Application de vente pour l'association La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2025", NA, "Application permettant à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
 )
 
 projetsPerso3 <- tribble(

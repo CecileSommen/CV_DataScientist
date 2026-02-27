@@ -1,23 +1,23 @@
+
 ---
 name: Cécile
 surname: Sommen
-position: "PhD - Data Scientist / Biostatistician"
+position: "PhD - Data Scientist / Biostatisticienne"
 #pronouns: she/her
 address: "Mines Paris PSL - ISPED"
 #profilepic: "../portrait_cecile.jpeg"
 phone: 0685845559
 #www: mariecurie.com
-email: "cecile.sommen@proton.fr"
+email: "cecile.sommen@proton.me"
 orcid: 0009-0005-4652-0575
 #twitter: mariecurie
 github: cecilesommen
 linkedin: cécile-sommen-101a70167
-date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "Je maîtrise l’ensemble du cycle de la donnée : traitement, croisement, structuration, production d'indicateurs, automatisation et restitution reproductible des analyses."
-
+date: "`r format(Sys.time(), '%Y')`"
+# aboutme: "Je maîtrise l’ensemble du cycle de la donnée (traitement, croisement, structuration, production d'indicateurs, automatisation et restitution reproductible des analyses) et forme les collègues à devenir autonomes."
 output:
   vitae::awesomecv:
-    page_total: true
+    #page_total: true
 # template: awesomecvmodif/awesome-cv.tex
 # output:
 #   pdf_document:
@@ -43,6 +43,9 @@ packages <- c('vitae'     # The CV's LaTeX Template
 
 xfun::pkg_attach2(packages, message = FALSE)
 
+Sys.setlocale("LC_TIME", "fr_FR.UTF-8")
+
+
 source("./data.r")
 
 ```
@@ -50,9 +53,10 @@ source("./data.r")
 # Profil
 
 
-PhD en Biostatistiques et diplômée par les Mines Paris PSL en Data Science avec plus de 15 ans d’expérience.  
-Spécialiste en biostatistiques, industrialisation des traitements et structuration de pipelines de données.  
-Expérience en pilotage transversal, production d’indicateurs stratégiques et collaborations internationales.
+Diplômée en Data Sciences par les Mines Paris-PSL et en Biostatistiques par l'Isped (PhD) avec 20 ans d’expérience.  
+Spécialiste en biostatistiques, industrialisation des traitements et structuration de pipelines de données automatisés.  
+Forte valeur ajoutée en pilotage transversal, transfert de compétences, production d’indicateurs stratégiques.  
+Collaborations internationales en Europe et en Asie, avec des structures de natures diverses.
 
 
 ```{r,results='asis'}
@@ -67,7 +71,7 @@ workIPC %>%
     with = title,
     what = unit,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -89,7 +93,7 @@ workSPF1 %>%
     with = title,
     what = unit,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -100,7 +104,7 @@ workSPF2 %>%
     #with = title,
     what = unit,
     why = detail,
-    #when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    #when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     #where = where
   )
 
@@ -111,7 +115,7 @@ workSPF3 %>%
     #with = title,
     what = unit,
     why = detail,
-    #when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    #when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     #where = where
   )
 
@@ -122,7 +126,7 @@ workORS %>%
     with = title,
     what = unit,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -133,7 +137,7 @@ workDanone %>%
     with = title,
     what = unit,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -144,7 +148,7 @@ workIsped %>%
     with = title,
     what = unit,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -180,7 +184,7 @@ skills %>%
 cat("\\vspace{1em}")
 ```
 
-# Projets personnels 
+# Projets personnels et bénévolat
 
 ```{r projets,results='asis'}
 
@@ -193,7 +197,7 @@ projetsPerso1 %>%
     why=details
   )
 
-cat("\\vspace{-1.5em}")
+cat("\\vspace{-1.7em}")
 
 projetsPerso2 %>%
   detailed_entries(
@@ -204,7 +208,7 @@ projetsPerso2 %>%
     why=details
   )
 
-cat("\\vspace{-1.5em}")
+cat("\\vspace{-1.7em}")
 
 projetsPerso3 %>%
   detailed_entries(
@@ -225,96 +229,96 @@ cat("\\newpage")
 
 \fontsize{9}{9}\selectfont
 
-Tebben, K., Eng, V.,\textbf{ Sommen C.},\textit{ et al.} (2025),``Parasite clearance in patients with Plasmodium vivax monoinfection treated with artesunate in Cambodia: an observational secondary analysis of trial data'', \textit{ The Lancet Microbe}\\
+Tebben, K., Eng, V.,\textbf{ Sommen C.},\textit{ et al.} (2025), Parasite clearance in patients with Plasmodium vivax monoinfection treated with artesunate in Cambodia: an observational secondary analysis of trial data, \textit{ The Lancet Microbe}. 
 
-Eng, V., Lek, D., \textbf{ Sommen C.},\textit{ et al.} (2025),``14 days of high-dose versus low-dose primaquine treatment in patients with Plasmodium vivax infection in Cambodia: a randomised, single-centre, open-label efficacy study'', \textit{ The Lancet Infectious Disease}\\
+Eng, V., Lek, D., \textbf{ Sommen C.},\textit{ et al.} (2025),  14 days of high-dose versus low-dose primaquine treatment in patients with Plasmodium vivax infection in Cambodia: a randomised, single-centre, open-label efficacy study, \textit{ The Lancet Infectious Disease}  
 
-Tan-Lhernould, L., Tamandjou, C.,\textbf{ Sommen C.},\textit{ et al.} (2023),``Impact of vaccination against severe COVID-19 in the French population aged 50 years and above: a retrospective population-based study'', \textit{ BMC Medicine}\\
+Tan-Lhernould, L., Tamandjou, C.,\textbf{ Sommen C.},\textit{ et al.} (2023),  Impact of vaccination against severe COVID-19 in the French population aged 50 years and above: a retrospective population-based study, \textit{ BMC Medicine}  
 
-Bernadou, A.,\textbf{ Sommen C.}, Pivette M.,\textit{ et al.} (2023), ``Estimating the burden of influenza-attributable severe acute respiratory infections on the hospital system in Metropolitan France, 2012-2018'', \textit{ BMC Infectious Diseases}\\
+Bernadou, A.,\textbf{ Sommen C.}, Pivette M.,\textit{ et al.} (2023),   Estimating the burden of influenza-attributable severe acute respiratory infections on the hospital system in Metropolitan France, 2012-2018, \textit{ BMC Infectious Diseases}  
 
-Bonaldi C., Fouillet A.,\textbf{ Sommen C.},\textit{ et al.} (2023),``Monitoring the reproduction number of COVID-19 in France: estimates compared from 3 datasets'', \textit{ Plos one}\\
+Bonaldi C., Fouillet A.,\textbf{ Sommen C.},\textit{ et al.} (2023),  Monitoring the reproduction number of COVID-19 in France: estimates compared from 3 datasets, \textit{ Plos one}  
 
-Pillonel J., Maugard C.,\textbf{ Sommen C.},\textit{ et al.} (2022),``Risk of a blood donation contaminated with hepatitis E virus entering the blood supply before the implementation of universal RNA screening in France'', \textit{ Vox Sanguinis}\\
+Pillonel J., Maugard C.,\textbf{ Sommen C.},\textit{ et al.} (2022),  Risk of a blood donation contaminated with hepatitis E virus entering the blood supply before the implementation of universal RNA screening in France, \textit{ Vox Sanguinis}  
 
-Vaux S., Blondel C., [...],\textbf{ Sommen C.},\textit{ et al.} (2022),``Vaccine coverage against COVID-19 and impact on the dynamics of the epidemic'', \textit{ Bull Epidémiol Hebd.}\\
+Vaux S., Blondel C., [...],\textbf{ Sommen C.},\textit{ et al.} (2022),  Vaccine coverage against COVID-19 and impact on the dynamics of the epidemic, \textit{ Bull Epidémiol Hebd.}  
 
-Haneef R., Fayad M.,\textbf{ Sommen C.},\textit{ et al.} (2022),``Direct impact of COVID-19 by estimating disability-adjusted life years at national level in France in 2020'', \textit{ Plos one}\\
+Haneef R., Fayad M.,\textbf{ Sommen C.},\textit{ et al.} (2022),  Direct impact of COVID-19 by estimating disability-adjusted life years at national level in France in 2020, \textit{ Plos one}  
 
-Cazein F., Bruyand M., [...], \textbf{ Sommen C.},\textit{ et al.} (2021),``HIV diagnoses in transgender people, France 2012-2020'', \textit{ Bull Epidémiol Hebd.}\\
+Cazein F., Bruyand M., [...], \textbf{ Sommen C.},\textit{ et al.} (2021),  HIV diagnoses in transgender people, France 2012-2020, \textit{ Bull Epidémiol Hebd.}  
 
-Castel C., \textbf{ Sommen C.}, Chatignoux E., \textit{ et al.} (2021),``Bayesian multi-response nonlinear mixed-effect model: application of two recent HIV infection biomarkers'', \textit{ The International Journal Of Biostatistics}\\
+Castel C., \textbf{ Sommen C.}, Chatignoux E., \textit{ et al.} (2021),  Bayesian multi-response nonlinear mixed-effect model: application of two recent HIV infection biomarkers, \textit{ The International Journal Of Biostatistics}  
 
-Castel C., \textbf{ Sommen C.}, Le Strat Y., \textit{ et al.} (2021),``A multi-state Markov model using notification data to estimate HIV incidence, number of undiagnosed individuals living with HIV, and delay between infection and diagnosis: illustration in France, 2008-2018'', \textit{ Statistical Methods in Medical Research}\\
+Castel C., \textbf{ Sommen C.}, Le Strat Y., \textit{ et al.} (2021),  A multi-state Markov model using notification data to estimate HIV incidence, number of undiagnosed individuals living with HIV, and delay between infection and diagnosis: illustration in France, 2008-2018, \textit{ Statistical Methods in Medical Research}  
 
-Pantazis N., Rosinska M.,[...],\textbf{ Sommen C.},\textit{ et al.} (2021),``Discriminating between pre-migration and post-migration HIV acquisition using surveillance data'', \textit{ Journal of Acquired Immune Deficiency Syndromes}\\
+Pantazis N., Rosinska M.,[...],\textbf{ Sommen C.},\textit{ et al.} (2021),  Discriminating between pre-migration and post-migration HIV acquisition using surveillance data, \textit{ Journal of Acquired Immune Deficiency Syndromes}  
 
-Spaccaferri G., Larrieu S.,[...],\textbf{ Sommen C.},\textit{ et al.} (2020),``Early assessment of the impact of mitigation measures to control COVID-19 in 22 French metropolitan areas, October to November 2020'', \textit{ Eurosurveillance}\\
+Spaccaferri G., Larrieu S.,[...],\textbf{ Sommen C.},\textit{ et al.} (2020),  Early assessment of the impact of mitigation measures to control COVID-19 in 22 French metropolitan areas, October to November 2020, \textit{ Eurosurveillance}  
 
-Trouiller P., Velter A.,[...],\textbf{ Sommen C.},\textit{ et al.} (2020),``Injecting drug use during sex (known as “slamming”) among men who have sex with men: Results from a time-location sampling survey conducted in five cities, France'', \textit{ International Journal of Drug Policy}\\
+Trouiller P., Velter A.,[...],\textbf{ Sommen C.},\textit{ et al.} (2020),  Injecting drug use during sex (known as “slamming”) among men who have sex with men: Results from a time-location sampling survey conducted in five cities, France, \textit{ International Journal of Drug Policy}  
 
-Stefic K., Guinard J.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),``Screening for Human Immunodeficiency Virus infection using a fourth-generation antigen/antibody assay and dried blood spots: in depth analysis of sensitivity and performance assessment in a cross-sectional study'', \textit{ Journal of Clinical Microbiology}\\
+Stefic K., Guinard J.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),  Screening for Human Immunodeficiency Virus infection using a fourth-generation antigen/antibody assay and dried blood spots: in depth analysis of sensitivity and performance assessment in a cross-sectional study, \textit{ Journal of Clinical Microbiology}  
 
-Brouard C., Saboni L.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),``HCV and HBV prevalence based on home blood self-sampling and screening history in the general population in 2016: contribution to the new French screening strategy
-Article'', \textit{ BMC Infectious Diseases}\\
+Brouard C., Saboni L.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),  HCV and HBV prevalence based on home blood self-sampling and screening history in the general population in 2016: contribution to the new French screening strategy
+Article, \textit{ BMC Infectious Diseases}  
 
-Tran T., Pillonel J.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),``Antenatal HIV screening: results from the National Perinatal Survey, France, 2016'', \textit{ Eurosurveillance}\\
+Tran T., Pillonel J.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),  Antenatal HIV screening: results from the National Perinatal Survey, France, 2016, \textit{ Eurosurveillance}  
 
-Vaux S., Chevaliez S.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),``Prevalence of hepatitis C infection, screening and associated factors among men who have sex with men attending gay venues: a cross-sectional survey (PREVAGAY), France, 2015.'', \textit{ BMC Infectious Disease}\\
+Vaux S., Chevaliez S.,[...],\textbf{ Sommen C.},\textit{ et al.} (2019),  Prevalence of hepatitis C infection, screening and associated factors among men who have sex with men attending gay venues: a cross-sectional survey (PREVAGAY), France, 2015., \textit{ BMC Infectious Disease}  
 
-Ingelbeen B., Bruyand M., [...],\textbf{ Sommen C.},\textit{ et al.} (2018),``Emerging Shiga-toxin-producing Escherichia coli serogroup O80 associated hemolytic and uremic syndrome in France, 2013-2016: differences with other serogroups.'', \textit{ PlosOne}\\
+Ingelbeen B., Bruyand M., [...],\textbf{ Sommen C.},\textit{ et al.} (2018),  Emerging Shiga-toxin-producing Escherichia coli serogroup O80 associated hemolytic and uremic syndrome in France, 2013-2016: differences with other serogroups., \textit{ PlosOne}  
 
-Sauvage C., Sabonie L., \textbf{ Sommen C.},\textit{ et al.} (2018),``Connaissance et utilisation de la prophylaxie pré-exposition (PrEP) parmi les hommes ayant des relations sexuelles avec des hommes fréquentant les lieux de convivialité gay de cinq villes françaises. Prevagay 2015.'',\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Sauvage C., Sabonie L., \textbf{ Sommen C.},\textit{ et al.} (2018),  Connaissance et utilisation de la prophylaxie pré-exposition (PrEP) parmi les hommes ayant des relations sexuelles avec des hommes fréquentant les lieux de convivialité gay de cinq villes françaises. Prevagay 2015.,\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
- \textbf{ Sommen C.}, Saboni L.,\textit{ et al.} (2018), ``Time location sampling in men who have sex with men in the HIV context: the importance of taking into account sampling weights and frequency of venue attendance.'', \textit{ Epidemiology and Infection}\\
+ \textbf{ Sommen C.}, Saboni L.,\textit{ et al.} (2018),   Time location sampling in men who have sex with men in the HIV context: the importance of taking into account sampling weights and frequency of venue attendance., \textit{ Epidemiology and Infection}  
 
-Vaux S., Chevaliez S., [...], \textbf{ Sommen C.},\textit{ et al.} (2018), ``Prévalence de l'infection par le virus de l'hépatite B (VHB) et couverture vaccinale contre le VHB chez les hommes ayant des relations sexuelles avec des hommes fréquentant des lieux de convivialité gay de cinq villes françaises. Étude PREVAGAY 2015.'',\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Vaux S., Chevaliez S., [...], \textbf{ Sommen C.},\textit{ et al.} (2018),   Prévalence de l'infection par le virus de l'hépatite B (VHB) et couverture vaccinale contre le VHB chez les hommes ayant des relations sexuelles avec des hommes fréquentant des lieux de convivialité gay de cinq villes françaises. Étude PREVAGAY 2015.,\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
-Van Cauteren D., Le Strat Y., \textbf{ Sommen C.},\textit{ et al.} (2018) ,``Estimation de la morbidité et de la mortalité liées aux infections d'origine alimentaire en France métropolitaine, 2008-2013.'',\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Van Cauteren D., Le Strat Y., \textbf{ Sommen C.},\textit{ et al.} (2018) ,  Estimation de la morbidité et de la mortalité liées aux infections d'origine alimentaire en France métropolitaine, 2008-2013.,\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
-Noel A., Ruello M., [...],\textbf{ Sommen C.},\textit{ et al.} (2017),``Large outbreak of urogenital schistosomiasis acquired in Southern Corsica: monitoring the early signs of the endemicization?'',\textit{ Clinical microbiology and infection}\\
+Noel A., Ruello M., [...],\textbf{ Sommen C.},\textit{ et al.} (2017),  Large outbreak of urogenital schistosomiasis acquired in Southern Corsica: monitoring the early signs of the endemicization?,\textit{ Clinical microbiology and infection}  
 
-Trouiller Gerfaux P., Saboni L., [...] ,\textbf{ Sommen C.},\textit{ et al.} (2017),``6 Rapports Prevagay 2015,[ Lille, Montpellier, Lyon, Nice, Paris, National]. Enquête de séroprévalence du VIH menée auprès des hommes ayant des relations sexuelles avec des hommes fréquentant les lieux de convivialité gay.'',\textit{ Santé publique France}\\
+Trouiller Gerfaux P., Saboni L., [...] ,\textbf{ Sommen C.},\textit{ et al.} (2017),  6 Rapports Prevagay 2015,[ Lille, Montpellier, Lyon, Nice, Paris, National]. Enquête de séroprévalence du VIH menée auprès des hommes ayant des relations sexuelles avec des hommes fréquentant les lieux de convivialité gay.,\textit{ Santé publique France}  
 
-Velter A., Sauvage C., [...],\textbf{ Sommen C.},\textit{ et al.} (2017),``Estimation de la prévalence du VIH chez les hommes ayant des relations sexuelles avec des hommes fréquentant les lieux de convivialité gay de cinq villes françaises PREVAGAY 2015.",\textit{ Bulletin de Méthodologie Sociologique}\\
+Velter A., Sauvage C., [...],\textbf{ Sommen C.},\textit{ et al.} (2017),  Estimation de la prévalence du VIH chez les hommes ayant des relations sexuelles avec des hommes fréquentant les lieux de convivialité gay de cinq villes françaises PREVAGAY 2015.",\textit{ Bulletin de Méthodologie Sociologique}  
 
-Jauffret-Roustide M., Serebroskhaya D.,,\textbf{ Sommen C.},\textit{ et al.} (2017),``Comparaison des profils, pratiques et situation vis-à-vis de l'hépatite C des usagers de drogues russophones et francophones à Paris. Enquête ANRS-Coquelicot, 2011-2013. Numéro thématique - Hépatites B et C en populations spécifiques.'',\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Jauffret-Roustide M., Serebroskhaya D.,,\textbf{ Sommen C.},\textit{ et al.} (2017),  Comparaison des profils, pratiques et situation vis-à-vis de l'hépatite C des usagers de drogues russophones et francophones à Paris. Enquête ANRS-Coquelicot, 2011-2013. Numéro thématique - Hépatites B et C en populations spécifiques.,\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
-Velter A., Saboni L.,\textbf{ Sommen C.},\textit{ et al.} (2015),``Sexual and prevention practices in men who have sex with men in the era of combination HIV prevention: results from the Presse Gays et Lesbiennes survey, France, 2011.",\textit{ Eurosurveillance}\\
+Velter A., Saboni L.,\textbf{ Sommen C.},\textit{ et al.} (2015),  Sexual and prevention practices in men who have sex with men in the era of combination HIV prevention: results from the Presse Gays et Lesbiennes survey, France, 2011.",\textit{ Eurosurveillance}  
 
-Velter A., Saboni L., [...],\textbf{ Sommen C.},\textit{ et al.} (2015),``Echantillons de convenance par Internet et par la presse - Enquête Presse Gays et Lesbiennes 2011.",\textit{ Bulletin de Méthodologie Sociologique}\\
+Velter A., Saboni L., [...],\textbf{ Sommen C.},\textit{ et al.} (2015),  Echantillons de convenance par Internet et par la presse - Enquête Presse Gays et Lesbiennes 2011.",\textit{ Bulletin de Méthodologie Sociologique}  
 
-Van Cauteren D., De Valk H., \textbf{ Sommen C.},\textit{ et al.}(2015) ,``Community Incidence of Campylobacteriosis and Nontyphoidal Salmonellosis, France, 2008–2013.",\textit{ Foodborne Pathogens and Disease}\\
+Van Cauteren D., De Valk H., \textbf{ Sommen C.},\textit{ et al.}(2015) ,  Community Incidence of Campylobacteriosis and Nontyphoidal Salmonellosis, France, 2008–2013.",\textit{ Foodborne Pathogens and Disease}  
 
-Pillonel J., Legrand D., \textbf{ Sommen C.} ,\textit{ et al.} (2014), ``Surveillance épidémiologique des donneurs de sang et risque résiduel de transmission du VIH, de l'HTLV, du VHC et du VHB par transfusion en France entre 2008 et 2010. Numéro thématique. Don de sang : surveillance.",\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Pillonel J., Legrand D., \textbf{ Sommen C.} ,\textit{ et al.} (2014),   Surveillance épidémiologique des donneurs de sang et risque résiduel de transmission du VIH, de l'HTLV, du VHC et du VHB par transfusion en France entre 2008 et 2010. Numéro thématique. Don de sang : surveillance.",\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
-Cazein F.,  Lot F., [...], \textbf{ Sommen C.},\textit{ et al.} (2013), ``Découvertes de séropositivité VIH et sida France, 2003-2012.",\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Cazein F.,  Lot F., [...], \textbf{ Sommen C.},\textit{ et al.} (2013),   Découvertes de séropositivité VIH et sida France, 2003-2012.",\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
-Campese C., Jarraud S., \textbf{ Sommen C.},\textit{ et al.} (2013). ``Legionnaires disease in France: sensitivity of the mandatory notification has improved over the last decade",\textit{ Epidemiology and infection} \\
+Campese C., Jarraud S., \textbf{ Sommen C.},\textit{ et al.} (2013).   Legionnaires disease in France: sensitivity of the mandatory notification has improved over the last decade",\textit{ Epidemiology and infection}   
 
-Cazein F., Pinget R.,[...], \textbf{ Sommen C.}  ,\textit{ et al.} (2013), ``Découvertes de séropositivité VIH et sida France, 2003-2011.",\textit{ Bulletin Epidémiologique Hebdomadaire}\\
+Cazein F., Pinget R.,[...], \textbf{ Sommen C.}  ,\textit{ et al.} (2013),   Découvertes de séropositivité VIH et sida France, 2003-2011.",\textit{ Bulletin Epidémiologique Hebdomadaire}  
 
- Beltzer N., Saboni. L,[...], \textbf{ Sommen C.} ,\textit{ et al.}(2012), ``An 18-year follow-up of HIV knowledge, risk perception, and practices in young adults.",\textit{ Aids}\\
+ Beltzer N., Saboni. L,[...], \textbf{ Sommen C.} ,\textit{ et al.}(2012),   An 18-year follow-up of HIV knowledge, risk perception, and practices in young adults.",\textit{ Aids}  
 
-Grange D., Host S.,  \textbf{ Sommen C.} (2012).``Les perceptions de la pollution de l'air intérieur en Île-de-France.",\textit{ Observatoire régional de santé}\\
+Grange D., Host S.,  \textbf{ Sommen C.} (2012).  Les perceptions de la pollution de l'air intérieur en Île-de-France.",\textit{ Observatoire régional de santé}  
 
-Lodwick R.K., [...],\textbf{ Sommen C.},[...] (2011). ``HIV in hiding: Methods and data requirements for the estimation of the number of people living with undiagnosed HIV''. \textit{ Aids} \\
+Lodwick R.K., [...],\textbf{ Sommen C.},[...] (2011).   HIV in hiding: Methods and data requirements for the estimation of the number of people living with undiagnosed HIV. \textit{ Aids}   
 
-Beltzer N., Saboni L.,[...], \textbf{ Sommen C.} (2011). ``Les connaissances, attitudes, croyances et comportements des Franciliens face au VIH/sida en Ile-de-France en 2010. ",\textit{ Observatoire régional de santé}\\
+Beltzer N., Saboni L.,[...], \textbf{ Sommen C.} (2011).   Les connaissances, attitudes, croyances et comportements des Franciliens face au VIH/sida en Ile-de-France en 2010. ",\textit{ Observatoire régional de santé}  
 
-Pepin P., d'Acremont M.F., [...], \textbf{ Sommen C.} (2011). ``Cancer du sein en Ile-de-France : épidémiologie, pratiques du dépistage, orientations pour les actions de promotion de la santé intégrant le dépistage. ",\textit{ Observatoire régional de santé}\\
+Pepin P., d'Acremont M.F., [...], \textbf{ Sommen C.} (2011).   Cancer du sein en Ile-de-France : épidémiologie, pratiques du dépistage, orientations pour les actions de promotion de la santé intégrant le dépistage. ",\textit{ Observatoire régional de santé}  
 
-Gremy I., Grange D., \textbf{ Sommen C.} (2011).``Les perceptions de la pollution de l'air extérieur en Île-de-France.",\textit{ Observatoire régional de santé}\\
+Gremy I., Grange D., \textbf{ Sommen C.} (2011).  Les perceptions de la pollution de l'air extérieur en Île-de-France.",\textit{ Observatoire régional de santé}  
 
- Bex-Capelle V. , Moularat S.,[...], \textbf{ Sommen C.} (2010). ``Effets sanitaires des moisissures dans l'habitat. L'enquête Esmha, pilote d'une étude épidémiologique en Île-de-France",\textit{ Observatoire régional de santé}\\
+ Bex-Capelle V. , Moularat S.,[...], \textbf{ Sommen C.} (2010).   Effets sanitaires des moisissures dans l'habitat. L'enquête Esmha, pilote d'une étude épidémiologique en Île-de-France",\textit{ Observatoire régional de santé}  
 
-Gremy I., Grange D., \textbf{ Sommen C.} (2010).``Les perceptions de la pollution de l'air extérieur en Île-de-France.",\textit{ Observatoire régional de santé}\\
+Gremy I., Grange D., \textbf{ Sommen C.} (2010).  Les perceptions de la pollution de l'air extérieur en Île-de-France.",\textit{ Observatoire régional de santé}  
 
-\textbf{ Sommen C.}, D Commenges, \textit{ et al.} (2010). ``Estimation of the distribution of infection times using longitudinal serological markers of HIV: implications for the estimation of HIV incidence''. \textit{ Biometrics}\\
+\textbf{ Sommen C.}, D Commenges, \textit{ et al.} (2010).   Estimation of the distribution of infection times using longitudinal serological markers of HIV: implications for the estimation of HIV incidence. \textit{ Biometrics}  
 
- Johri M., Morales R.E.,[...], \textbf{ Sommen C.},\textit{ et al.} (2010). ``A cross-sectional study of risk factors for HIV among pregnant women in Guatemala City, Guatemala: Lessons for prévention.'' \textit{ Int J of STD AIDS}\\
+ Johri M., Morales R.E.,[...], \textbf{ Sommen C.},\textit{ et al.} (2010).   A cross-sectional study of risk factors for HIV among pregnant women in Guatemala City, Guatemala: Lessons for prévention. \textit{ Int J of STD AIDS}  
 
-\textbf{ Sommen C.}, A. Alioum, D. Commenges (2009). ``A multistate approach for estimating the incidence of Human Immunodeficiency Virus by using HIV and AIDS French surveillance data'', \textit{ Statistics in Medicine}\\
+\textbf{ Sommen C.}, A. Alioum, D. Commenges (2009).   A multistate approach for estimating the incidence of Human Immunodeficiency Virus by using HIV and AIDS French surveillance data, \textit{ Statistics in Medicine}  
 
  
 

@@ -1,0 +1,159 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% George Abitbol <george@abitbol.org>
+% Lars Richter <mail@ayeks.de>
+% 
+% Francisé et modifier par ordinatous
+% Ludovic Marchal <contact@ordinatous.com>
+%
+% Template license:
+% LICENCE CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS du document
+%-------------------------------------------------------------------------------
+% FORMAT du papier
+% Format A4 par défaut, utiliser 'letterpaper' pour le format US letter:
+\documentclass[11pt, a4paper]{awesome-cv}
+% LANGUE
+% Francisation du document , format de date, syntaxe et correcteur orthographique:
+\usepackage[french]{babel}
+% MARGES
+% Configurer les marges ici:
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+% FONTS
+% Indiquer l'emplacement des fonts ici:
+\fontdir[..fonts/]
+% COULEUR
+% Couleur pour les mise en avant:
+% Awesome Couleurs: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Décommenter pour choisir d'autres couleurs:
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Coleurs pour le texte:
+% Décommenter pour en choisir une:
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% ACTIVER Highlights
+% Basculer la valeur à false pour suprimmer les mise en avant:
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	INFORMATIONS PERSONNELLE
+%	Commenter les entrées suivantes si elles ne sont pas nécessaires:
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo{../examples/profil_02}
+\name{Cécile}{Sommen}
+\position{PhD - Data-Scientist / Biostatisticienne}
+\address{1B rue du Temple, 94100 Saint-Maur-des-Fossés}
+
+\mobile{0685845559}
+\email{cecile.sommen@proton.me}
+% RESEAUX SOCIAUX
+\github{cecilesommen}
+\linkedin{cécile-sommen-101a70167}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+% CITATION
+%\quote{« Attention ! ce flim n'est pas un flim sur le « cyclimse ». Merci de votre compréhension »}
+
+
+%-------------------------------------------------------------------------------
+%	INFO du courrier
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% INTERLOCUTEUR
+\recipient
+  {Santé publique France}
+  {12 rue du Val d'Osne, 94415 Saint Maurice Cedex}
+% The date on the letter, default is the date of compilation
+\letterdate{Le \today}
+% TITRE
+\lettertitle{Candidature au poste de Data Engineer / Scientist (f/h) (réf. DATA-CDI-2026-03}
+% INTRO
+\letteropening{Madame, Monsieur,}
+% OUTRO
+\letterclosing{Je vous prie d’agréer, Madame, Monsieur, mes salutations distinguées.}
+% Any enclosures with the letter
+\letterenclosure[Veillez trouver en pièce jointe]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {Le \today}
+  {Cécile Sommen~~~·~~~Candidature au poste de Data Engineer / Scientist (f/h) (réf. DATA-CDI-2026-03}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	CONTENU du courrier
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+
+
+\vspace{0.5ex}
+
+Forte d’une double expertise en biostatistiques (PhD) et en data science (Mines Paris-PSL), et d’une expérience de 20 ans dont 12 dans des équipes DATA de Santé publique France, , je considère que ce poste s’inscrit dans la continuité logique de mon parcours professionnel. Il prolonge les missions que j’exerce depuis plusieurs années en matière de structuration, d’automatisation et de développement méthodologique des activités data.
+
+\vspace{0.5ex}
+
+Au sein de la DATA, j’ai développé une expertise couvrant l’ensemble du cycle de vie des données : coordination transverse, structuration de pipelines, automatisation et garantie de la qualité et de la traçabilité des traitements. J’ai conçu et industrialisé des chaînes complètes de production d’indicateurs nationaux, de l’ingestion des données à leur restitution automatisée (R, GitLab, Airflow). Lors de la crise Covid-19, j’ai repensé et automatisé la production des indicateurs hospitaliers (SIVIC), permettant une diffusion fiable, documentée et sans intervention manuelle, dans des délais contraints et sous forte pression. Ma capacité à organiser, prioriser et sécuriser les processus vise en permanence à garantir des livrables robustes, reproductibles et rendus dans les temps impartis.
+
+\vspace{0.5ex}
+
+Habituée aux environnements exigeant réactivité et coordination multi-acteurs, je sais piloter des projets data en lien étroit avec les équipes métiers et techniques, arbitrer les priorités et structurer le travail collectif. Mon expérience m’a conduite à animer des échanges méthodologiques transversaux, à formaliser des procédures et à promouvoir l’usage de bonnes pratiques (versionning, documentation, automatisation), dans une logique de qualité et d’amélioration continue.
+
+\vspace{0.5ex}
+
+Depuis 2024, je développe une activité de data scientist à l’Institut Pasteur du Cambodge, où j’accompagne les équipes locales dans leurs analyses et le renforcement de leurs compétences. J’y mobilise à la fois expertise technique et qualités pédagogiques : explicitation des choix méthodologiques, structuration des codes, transfert de bonnes pratiques sous R, adaptation aux profils et aux contextes culturels. Cette expérience internationale a renforcé mon agilité, ma capacité d’adaptation et mon sens du collectif.
+
+\vspace{0.5ex}
+
+Curieuse et force de proposition, j’ai su évoluer vers des approches d’ingénierie et de science des données (Python, SQL, Spark, orchestration, data visualisation), tout en conservant une rigueur statistique forte et une compréhension fine des enjeux de santé publique. Cette double culture me permet d’articuler vision stratégique, exigences scientifiques et contraintes opérationnelles.
+
+\vspace{0.5ex}
+
+Rejoindre ce poste représente pour moi l’opportunité de contribuer activement à la structuration, à la montée en qualité et en agilité des activités Data Science et Data Ingénierie de la direction DATA. Je serais ravie de pouvoir échanger avec vous afin de détailler la manière dont je pourrais accompagner cette dynamique.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
