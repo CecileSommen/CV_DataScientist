@@ -37,10 +37,11 @@ vignettes/*.pdf
 *.knit.md
 
 # Temporary files created by Latex
-.aux
-.log
-.out
-.synctex.gz
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.pdf
 
 # R Environment Variables
 .Renviron
@@ -53,3 +54,4 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
