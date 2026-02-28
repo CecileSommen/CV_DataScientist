@@ -54,7 +54,7 @@ source("./data.r")
 # Profil
 
 
-Diplômée en Data Sciences par les Mines Paris-PSL et en Biostatistiques par l'Isped (PhD) avec 20 ans d’expérience.  
+Diplômée en Data Sciences par les Mines Paris-PSL et en Biostatistiques par l'Isped (PhD) avec 19 ans d’expérience.  
 Spécialiste en biostatistiques, industrialisation des traitements et structuration de pipelines automatisés.  
 Forte valeur ajoutée en pilotage transversal, transfert de compétences, production d’indicateurs stratégiques.  
 Collaborations internationales en Europe et en Asie, avec des structures de natures diverses.
