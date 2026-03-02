@@ -117,13 +117,13 @@ projetsPerso1 <- tribble(
 
 projetsPerso2 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Développement d'une application de vente pour l'association La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2024", NA, "Application permettant de faciliter la gestion comptable. Outil permettant également à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
+  "Développement d'une application de vente pour La Petite Librairie Solidaire", "Appsheet, GoogleSheet", "2024", NA, "Application permettant de faciliter la gestion comptable. Outil permettant également à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)."
 )
 
 # à chaque vendeur de saisir les informations de vente pour chaque client, de calculer instantanément le montant total, d’enregistrer automatiquement les données dans un Google Sheet et de visualiser des indicateurs agrégés (nombre de clients, montant des ventes et livres vendus)
 projetsPerso3 <- tribble(
   ~area, ~accomplishment, ~year, ~where,~details,
-  "Développement d'un programme réservation automatique de terrain de tennis", "Webscrapping, Python, Cron", "2021", NA, c("Programme permettant de réserver automatiquement un terrain de tennis dès l'ouverture des réservations.","https://github.com/CecileSommen/Automate_resa_tennis")
+  "Développement d'un programme de réservation automatique de terrain de tennis", "Webscrapping, Python, Cron", "2021", NA, c("Programme permettant de réserver automatiquement un terrain de tennis dès l'ouverture des réservations.","https://github.com/CecileSommen/Automate_resa_tennis")
 )
 
 # https://github.com/rainsworth/awesomeCV/blob/master/resume.pdf
